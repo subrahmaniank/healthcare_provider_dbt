@@ -205,3 +205,17 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# dbt artifacts and local state
+**/target/
+**/logs/
+dbt_packages/
+.dbt/
+
+# Local DuckDB files
+*.duckdb
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.vscode/

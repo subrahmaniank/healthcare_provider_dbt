@@ -1,0 +1,11 @@
+provider_id,name,specialty,location,license_number
+PR001,Dr. Alice Smith,General Practitioner,"New York, NY",LIC12345
+PR002,Dr. Bob Johnson,Cardiologist,"Los Angeles, CA",LIC67890
+PR003,City Clinic,Dentist,"Chicago, IL",LIC11223
+PR004,Dr. Charlie Lee,Orthopedist,"San Francisco, CA",LIC44556
+PR005,Health Center,Pediatrician,"Miami, FL",LIC77889
+PR006,Dr. Diana Ross,Neurologist,"Boston, MA",LIC99001
+PR007,Wellness Hospital,Emergency Medicine,"Seattle, WA",LIC22334
+PR008,Dr. Evan Green,Radiologist,"Dallas, TX",LIC55667
+PR009,Family Care,Family Medicine,"Atlanta, GA",LIC88990
+PR010,Dr. Fiona Hall,Surgeon,"Denver, CO",LIC00112

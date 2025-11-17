@@ -1,0 +1,11 @@
+plan_id,plan_name,coverage_type,premium_monthly
+P001,Individual Health,Family,97.45
+P002,Basic Coverage,Family,240.54
+P003,Senior Care,Family,291.78
+P004,Individual Care,Individual,214.38
+P005,Basic Care,Individual,250.01
+P006,Senior Coverage,Individual,102.47
+P007,Basic Health,Individual,224.2
+P008,Premium Plan,Family,188.87
+P009,Family Health,Family,70.99
+P010,Basic Plan,Family,251.15
