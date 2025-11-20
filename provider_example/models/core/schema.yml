@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: int_member_eligibility
+    description: "Intermediate model joining members, eligibility, and plans"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - member_id
+            - plan_id
+            - eligibility_start
+    columns:
+      - name: member_id
+        description: "Primary key for member"
+        tests:
+          - not_null
+      - name: plan_id
+        description: "Foreign key to plans"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_plans')
+              field: plan_id
+      - name: eligibility_start
+        description: "Start date of eligibility"
+        tests:
+          - not_null
+      - name: eligibility_end
+        description: "End date of eligibility"
+        tests:
+          - not_null
+
+  - name: member_claims_summary
+    description: "Summary of claims per member"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - member_id
+            - plan_name
+    columns:
+      - name: member_id
+        description: "Primary key for member"
+        tests:
+          - not_null
+      - name: total_claims
+        description: "Total number of claims"
+        tests:
+          - not_null
+      - name: total_claim_amount
+        description: "Total amount claimed"
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"

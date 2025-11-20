@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: stg_claims
+    description: "Staging model for claims"
+    columns:
+      - name: claim_id
+        description: "Primary key for claims"
+        tests:
+          - unique
+          - not_null
+      - name: claim_date
+        description: "Date of the claim"
+        tests:
+          - not_null
+      - name: amount
+        description: "Claim amount"
+        tests:
+          - dbt_utils.expression_is_true:
+              expression: "> 0"
+      - name: status
+        description: "Claim status"
+        tests:
+          - accepted_values:
+              values: ['Approved', 'Pending', 'Denied']
+
+  - name: stg_members
+    description: "Staging model for members"
+    columns:
+      - name: member_id
+        description: "Primary key for members"
+        tests:
+          - unique
+          - not_null
+      - name: age
+        description: "Member age"
+        tests:
+          - dbt_utils.expression_is_true:
+              expression: ">= 18"
+
+  - name: stg_providers
+    description: "Staging model for providers"
+    columns:
+      - name: provider_id
+        description: "Primary key for providers"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_plans
+    description: "Staging model for plans"
+    columns:
+      - name: plan_id
+        description: "Primary key for plans"
+        tests:
+          - unique
+          - not_null
