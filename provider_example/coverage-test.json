@@ -1,0 +1,628 @@
+{
+  "cov_type": "test",
+  "hits": 21,
+  "covered": 15,
+  "total": 73,
+  "coverage": 0.2054794520547945,
+  "tables": [
+    {
+      "name": "main.claims",
+      "hits": 0,
+      "covered": 0,
+      "total": 8,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "claim_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "member_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "plan_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "claim_date",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "service_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "amount",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "status",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "provider_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "main.eligibility",
+      "hits": 0,
+      "covered": 0,
+      "total": 6,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "eligibility_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "member_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "plan_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "start_date",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "end_date",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_eligible",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "main.members",
+      "hits": 0,
+      "covered": 0,
+      "total": 5,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "member_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "age",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "gender",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "enrollment_date",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "main.plans",
+      "hits": 0,
+      "covered": 0,
+      "total": 4,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "plan_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "plan_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "coverage_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "premium_monthly",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "main.providers",
+      "hits": 0,
+      "covered": 0,
+      "total": 5,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "provider_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "specialty",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "location",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "license_number",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "main_core.int_member_eligibility",
+      "hits": 5,
+      "covered": 4,
+      "total": 9,
+      "coverage": 0.4444444444444444,
+      "columns": [
+        {
+          "name": "member_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "age",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "gender",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "enrollment_date",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "plan_id",
+          "hits": 2,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "plan_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "eligibility_start",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "eligibility_end",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "name": "main_core.member_claims_summary",
+      "hits": 4,
+      "covered": 3,
+      "total": 8,
+      "coverage": 0.375,
+      "columns": [
+        {
+          "name": "member_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "plan_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "total_claims",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "total_claim_amount",
+          "hits": 2,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "last_claim_date",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "services_claimed",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "providers_involved",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "main_stage.stg_claims",
+      "hits": 5,
+      "covered": 4,
+      "total": 8,
+      "coverage": 0.5,
+      "columns": [
+        {
+          "name": "claim_id",
+          "hits": 2,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "member_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "plan_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "claim_date",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "service_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "amount",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "status",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "provider_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "main_stage.stg_eligibility",
+      "hits": 0,
+      "covered": 0,
+      "total": 6,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "eligibility_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "member_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "plan_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "start_date",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "end_date",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_eligible",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "main_stage.stg_members",
+      "hits": 3,
+      "covered": 2,
+      "total": 5,
+      "coverage": 0.4,
+      "columns": [
+        {
+          "name": "member_id",
+          "hits": 2,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "age",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "gender",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "enrollment_date",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "main_stage.stg_plans",
+      "hits": 2,
+      "covered": 1,
+      "total": 4,
+      "coverage": 0.25,
+      "columns": [
+        {
+          "name": "plan_id",
+          "hits": 2,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "plan_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "coverage_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "premium_monthly",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "main_stage.stg_providers",
+      "hits": 2,
+      "covered": 1,
+      "total": 5,
+      "coverage": 0.2,
+      "columns": [
+        {
+          "name": "provider_id",
+          "hits": 2,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "specialty",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "location",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "license_number",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    }
+  ]
+}
